@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --dark-blue: #000532;
+  --light-blue: #7691C8;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body{
+  min-height: 100vh;
+  background: linear-gradient(#000532, #E6E7F3);
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Poppins', sans-serif;
+/*   overflow: hidden; */
+}
+
+
+
+/* nav */
+header{
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000; 
+}
+
+.logo{
+  color: #fff;
+  text-decoration: none;
+}
+
+header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li{
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+header ul li a:hover, header ul li a.active{
+  background: #fff;
+  color: var(--dark-blue);
+  transition-duration: 0.9s;
+}
+
+
+section #star{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#title{
+  position: relative;
+  padding: 25px;
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+#dailyImg{
+  border: 2px dotted #CCCCFF;
+  width: 70vw;
+  height: 75vh;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#daily{
+  position: relative;
+}
+
+#bottom{
+  margin-top: 50px;
+  position: relative;
+  background: #8485A0;
+  justify-content: center;
+  text-align: center;
+}
+
+.description{
+  font-size: 20px;
+  position: relative;
+  text-align: left;
+  justify-content: left;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.title{
+  position: relative;
+  padding: 25px;
+  font-size: 35px;
+  margin-bottom: 8px;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}

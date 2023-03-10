@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --dark-blue: #000532;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  
+}
+
+body{
+  min-height: 100vh;
+  background: linear-gradient(#A4B1CB, #E6E7F3) !important;
+  background-repeat: no-repeat;
+/*   overflow: hidden; */
+}
+
+#text{
+  text-align: center;
+  position: relative;
+  letter-spacing: -0.5px;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9;
+}
+
+#logo{
+  margin-left: 10px;
+  margin-top: 25px;
+  color: #fff;
+  text-decoration: none;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  display: inline-block;
+  transition-duration: 0.9s;
+  border-radius: 20px;
+}
+
+#logo:hover{
+  padding: 10px 15px;
+  border-radius: 20px;
+  background: #fff;
+  color: var(--dark-blue);
+  transition-duration: 0.9s;
+}
+
+#random{
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background: #fff; 
+  color: var(--dark-blue);
+  font-size: 1.1em;
+  margin-top: -30px;
+  margin-left: 1070px;
+  transition: 1.3s;
+  cursor:pointer;
+}
+
+#random:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.solars{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 130px;
+}
+
+.solars ul{
+  display: flex; 
+}
+
+img{
+  width: 300px;
+  height: 250px;
+}
+
+#btn{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-image {
+	display: block;
+	min-height: 20rem; /* layout hack */
+	background: #fff center center no-repeat;
+	background-size: cover;
+	filter: blur(3px); /* blur the lowres image */
+}
+
+
+.card-image.is-loaded {
+	filter: none; /* remove the blur on fullres image */
+	transition: filter 1s;
+}
+
+
+
+
+
+.cards {
+  background: white !important;
+	display: block;
+	margin: 1rem auto;
+	padding: 0;
+	font-size: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.planetCard {
+  list-style-type: none !important;
+  background: white !important;
+	display: inline-flex !important;
+	width: 90%;
+	max-width: 20rem;
+	margin: 1rem;
+	font-size: 1rem;
+	text-decoration: none;
+	overflow: hidden;
+	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.planetCard:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+.content {
+	display: block;
+	padding: 1em 0.5em;
+	color: #515151;
+	text-decoration: none;
+}
+
+.content > h2 {
+	margin: 0 0 0.5em;
+}
+
+.content > p {
+	margin: 0;
+}

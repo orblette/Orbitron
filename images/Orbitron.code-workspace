@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../Orbitron"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../planets"
+		}
+	],
+	"settings": {}
+}

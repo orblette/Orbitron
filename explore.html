@@ -1,32 +1,99 @@
 <!DOCTYPE html>
+
 <head>
-   <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Space Page</title>
   <link href="explore.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-  <div class="button"><a id="logo" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
-</svg> Back </a></div>
-
-  <button id="random">Random Planet</button>
-  
-  <h1 id="text">Planets</h1>
-  <div>
-    <ul class="solars">
-      <li><img id="mercury"  onclick="getInfo()" src="planets/mercury.png"><button id="btn">Read More</button></li>
-      <li><img id="venus"  onclick="getInfo()" src="planets/venus.png"><button id="btn">Read More</button></li>
-      <li><img id="earth"  onclick="getInfo()" src="planets/earth.png"><button id="btn">Read More</button></li>
-      <li><img id="mars"  onclick="getInfo()" src="planets/mars.png"><button id="btn">Read More</button></li>
-      <li><img id="jupiter"  onclick="getInfo()" src="planets/jupiter.png"><button id="btn">Read More</button></li>
-      <li><img id="saturn" onclick="getInfo()" src="planets/saturn.png"><button id="btn">Read More</button></li>
-      <li><img id="uranus" onclick="getInfo()" src="planets/uranus.png"><button id="btn">Read More</button></li>
-      <li><img id="neptune" onclick="getInfo()" src="planets/neptune.png"><button id="btn">Read More</button></li>
-    </ul>
+  <div class="night-sky">
+    <div class="shooting-stars" class="shooting-stars2"></div>
   </div>
+  <div id="back"></div>
 
+  <div class="star1 star"></div>
+  <div class="star2 star"></div>
+  <div class="star3 star"></div>
+  <div class="star4 star"></div>
+  <div class="star5 star"></div>
+  <div class="star6 star"></div>
+  <div class="star7 star"></div>
+  <div class="star8 star"></div>
+  <div class="star9 star"></div>
+  <div class="star10 star"></div>
+  <div class="star11 star"></div>
+
+
+  <div id="back"><a id="logo" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+        fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z" />
+      </svg> Back </a></div>
+
+
+  <a id="random" href="#rand">Random Bodies</a>
+
+  <h1 id="text">Planets</h1>
+
+ 
+ <div class="universe">
+  <div class="solar">
+    <p class="body sun" href="#sun"></p>
+    <div onclick="getInfo('mercury')">
+    <a class="body mercury" href="#mercury" >
+      <button class="handle" >Mercury</button>
+    </a>
+    </div>
+    <div onclick="getInfo('venus')">
+    <a class="body venus" href="#venus">
+      <button class="handle" >Venus</button>
+    </a>
+    </div>
+    <div onclick="getInfo('earth')">
+    <a class="body earth" href="#earth">
+      <button class="handle">Earth</button>
+    </a>
+    </div>
+    <div onclick="getInfo('mars')">
+    <a class="body mars" href="#mars">
+      <button class="handle" >Mars</button>
+    </a>
+    </div>
+    <div onclick="getInfo('jupiter')">
+    <a class="body jupiter" href="#jupiter">
+      <button class="handle">Jupiter</button>
+    </a>
+    </div>
+    <div onclick="getInfo('saturn')">
+    <a class="body saturn" href="#saturn">
+      <button class="handle" >Saturn</button>
+      <div class="ring"></div>
+      <div class="ring top"></div>
+    </a>
+    </div>
+    <div onclick="getInfo('uranus')">
+    <a class="body uranus" href="#uranus">
+      <button class="handle" >Uranus</button>
+    </a>
+    </div>
+    <div onclick="getInfo('neptune')">
+    <a class="body neptune" href="#neptune">
+      <button class="handle" onclick="getInfo('neptune')">Neptune</button>
+    </a>
+    </div>
+  </div>
+</div>
+
+  <div class="modals">
+</div>
+  
+  <section id="rand">
+  <h2 id="text2">Random Bodies</h2>
+
+  
   <div id="planets"></div>
-
+</section>
   <script src="explore.js"></script>
 </body>
